@@ -85,8 +85,8 @@ class TestCaseModel(TimeStampedModel):
     automation_status = models.CharField(max_length=100, choices=AutomationChoices.choices,
                                          default=AutomationChoices.NOT_AUTOMATABLE)
     comments = GenericRelation("Comment", related_name='testcases')
-    created_by = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, blank=True, null=True, to_field='email')
-    slug = AutoSlugField(populate_from='test_name', unique=True, always_update=True)
+    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True,
+                                   to_field='email')
     history = HistoricalRecords()
     objects = TestCaseManager()
 

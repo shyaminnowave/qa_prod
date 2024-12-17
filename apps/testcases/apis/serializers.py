@@ -116,7 +116,7 @@ class NatcoStatusSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = NatcoStatus
-        fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'test_case', 'status', 'applicable',
+        fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'test_case', 'status', 'applicable', 'user',
                   'modified', 'history_change_reason']
 
 
@@ -127,7 +127,7 @@ class NatcoStatusSerializer(serializers.ModelSerializer):
             fields = ['user', 'modified']
             self.Meta.fields.extend(fields)
         if resolve_match.url_name == 'testcase-natco':
-            self.Meta.fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'status',
+            self.Meta.fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'status', 'user'
                                 'applicable', 'history_change_reason', 'modified']
         super(NatcoStatusSerializer, self).__init__(*args, **kwargs)
 
@@ -143,6 +143,7 @@ class NatcoStatusSerializer(serializers.ModelSerializer):
         represent['test_case'] = instance.test_case.test_name
         represent['jira_id'] = instance.test_case.jira_id
         represent['summary'] = instance.test_case.summary if instance.test_case.summary else None
+        represent['user'] = instance.user.fullname if instance.user else None
         represent['modified'] = instance.modified.fullname if instance.modified else None
         represent['applicable'] = "True" if instance.applicable else "False"
         return represent
@@ -195,6 +196,10 @@ class TestCaseSerializer(serializers.ModelSerializer):
             }
             for result in _data
         ] if _data else []
+
+    def create(self, validated_data):
+        created_by = self.context['request'].user
+        return TestCaseModel.objects.create(created_by=created_by, **validated_data)
 
     def update(self, instance, validated_data):
         message = ''

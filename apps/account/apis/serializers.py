@@ -11,7 +11,7 @@ from rest_framework.fields import CharField
 from apps.account.fields import CompanyEmailValidator
 import re
 from django.contrib.auth.models import Group, PermissionsMixin, Permission
-from analytiqa.helpers.exceptions import CustomFieldException
+from qa_portal.helpers.exceptions import CustomFieldException
 from rest_framework.exceptions import AuthenticationFailed
 
 User = get_user_model()

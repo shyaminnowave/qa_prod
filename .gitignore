@@ -1,9 +1,8 @@
 Dockerfile
 .env
 pytest.ini
-requirements.txt
 supervisord.conf
-frontend
+frontend/
 apps/__pycache__
 apps/*/migrations/__pycache__
 

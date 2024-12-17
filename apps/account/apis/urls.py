@@ -3,7 +3,7 @@ from apps.account.apis import views
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 
 
-app_name = 'accounts'
+app_name = 'account'
 
 urlpatterns = [
     path('create-account/', views.AccountCreateView.as_view(), name='create-user'),

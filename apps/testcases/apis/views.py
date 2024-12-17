@@ -1,5 +1,7 @@
 from rest_framework import generics
 from collections import defaultdict
+
+from rest_framework.authentication import SessionAuthentication
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from apps.testcases.models import (
     TestCaseModel,
@@ -153,13 +155,12 @@ class TestCaseListView(generics.ListAPIView):
 
     def get_queryset(self):
         queryset = None
-        project = self.kwargs.get("project", None)
         if self.kwargs.get('type') == 'performance':
-            queryset = TestCaseModel.objects.filter(project=project).performance_testcase()
+            queryset = TestCaseModel.objects.filter.performance_testcase()
         elif self.kwargs.get('type') == 'smoke':
-            queryset = TestCaseModel.objects.filter(project=project).smoke_testcase()
+            queryset = TestCaseModel.objects.smoke_testcase()
         elif self.kwargs.get('type') == 'soak':
-            queryset = TestCaseModel.objects.filter(project=project).soak_testcase()
+            queryset = TestCaseModel.objects.soak_testcase()
         return queryset.only("jira_id",
                             "test_name",
                             "priority",
@@ -182,10 +183,11 @@ class TestCaseListView(generics.ListAPIView):
 )
 class TestCaseView(cgenerics.CustomCreateAPIView):
 
-    authentication_classes = (JWTAuthentication, )
+    authentication_classes = (JWTAuthentication, SessionAuthentication)
     serializer_class = TestCaseSerializer
 
     def post(self, request, *args, **kwargs):
+        print(request.user.email)
         self.response_format['message'] = "TestCase Created Successfull"
         return super(TestCaseView, self).post(request, *args, **kwargs)
 
@@ -472,33 +474,18 @@ class FiltersView(APIView):
 class ExcelUploadView(generics.GenericAPIView):
 
     serializer_class = ExcelSerializer
+    authentication_classes = [JWTAuthentication,]
 
     def post(self, request, *args, **kwargs):
         try:
             kwargs_splitted = kwargs.get("path").split("/")
             method = request.FILES.get("file")
-            print("method", method)
             instance = None
             if kwargs_splitted[0] == "report":
-                instance = ReportExcel(file=method).import_data()
+                instance = ReportExcel(file=method, request=request).import_data()
             return Response(instance)
         except Exception as e:
             return Response(str(e))
-
-
-class DemoView(generics.GenericAPIView):
-
-    serializer_class = TestCaseSerializer
-
-    def get_queryset(self):
-        queryset = TestCaseModel.objects.prefetch_related('test_steps').get(id=13005)
-        print(len(queryset.test_steps.all()))
-        return queryset
-
-    def get(self, request):
-        serializer = self.get_serializer(self.get_queryset())
-        return Response(serializer.data)
-
 
 @extend_schema(
     summary="Retrieve History of Test Case Changes",
