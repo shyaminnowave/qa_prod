@@ -2,7 +2,7 @@ import json
 from typing import Any
 from rest_framework import mixins
 from rest_framework.generics import GenericAPIView
-from analytiqa.helpers.renders import ResponseInfo
+from qa_portal.helpers.renders import ResponseInfo
 from rest_framework import status
 from rest_framework.views import Request, Response
 
@@ -30,7 +30,7 @@ class CustomCreateAPIView(mixins.CreateModelMixin, GenericAPIView):
         except Exception as e:
             self.response_format['status'] = False
             self.response_format['status_code'] = status.HTTP_500_INTERNAL_SERVER_ERROR
-            self.response_format['message'] = e.detail
+            self.response_format['message'] = str(e)
             return Response(self.response_format, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 

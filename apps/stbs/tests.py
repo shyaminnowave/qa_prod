@@ -6,7 +6,7 @@ from django.urls import reverse
 from rest_framework import status
 from apps.stbs.models import Language
 from django.core.exceptions import ValidationError
-from apps.stbs.models import STBManufacture, Language, NactoManufactureLanguage, Natco
+from apps.stbs.models import STBManufacture, Language, NactoManufacturesLanguage, Natco
 from apps.stbs.apis.serializers import LanguageSerializer, STBManufactureSerializer
 # Create your tests here.
 
@@ -112,6 +112,6 @@ class TestNatcoManufatureLang:
         natoc = Natco.objects.create(country='Poland', natco='PL')
         device = STBManufacture.objects.create(name="SDMC")
         language = Language.objects.create(language_name="English")
-        _data = NactoManufactureLanguage.objects.create(natco=natoc, device_name=device,
+        _data = NactoManufacturesLanguage.objects.create(natco=natoc, device_name=device,
                                                         language_name=language)
         assert _data.natco == natoc

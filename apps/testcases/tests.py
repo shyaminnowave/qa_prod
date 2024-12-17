@@ -1,7 +1,7 @@
 import pytest
 from django.test import TestCase
 from apps.testcases.models import TestCaseModel, NatcoStatus
-from apps.stbs.models import STBManufacture, Language, Natco, NactoManufactureLanguage
+from apps.stbs.models import STBManufacture, Language, Natco, NactoManufacturesLanguage
 from rest_framework.test import APIClient
 from django.urls import reverse
 from apps.testcases.models import NatcoStatus
@@ -54,7 +54,7 @@ class TestNatcoList:
         natoc = Natco.objects.create(country='Poland', natco='PL')
         device = STBManufacture.objects.create(name="SDMC")
         language = Language.objects.create(language_name="English")
-        _data = NactoManufactureLanguage.objects.create(natco=natoc, device_name=device,
+        _data = NactoManufacturesLanguage.objects.create(natco=natoc, device_name=device,
                                                         language_name=language)
         self.test_case = TestCaseModel.objects.create(
             jira_id=1,
@@ -83,7 +83,7 @@ class TestNatcoStatus:
         natoc = Natco.objects.create(country='Poland', natco='PL')
         device = STBManufacture.objects.create(name="SDMC")
         language = Language.objects.create(language_name="English")
-        _data = NactoManufactureLanguage.objects.create(natco=natoc, device_name=device,
+        _data = NactoManufacturesLanguage.objects.create(natco=natoc, device_name=device,
                                                         language_name=language)
         self.test_case = TestCaseModel.objects.create(
             jira_id=1,
@@ -116,6 +116,3 @@ class TestNatcoStatus:
         assert self.testcase_instance.automation_status == 'in-development'
         assert response_data['success'] == True
         assert response_data['data']['status'] == "in_development"
-
-
-

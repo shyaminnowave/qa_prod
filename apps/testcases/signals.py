@@ -27,6 +27,8 @@ def save_natco_status(sender, instance, created, **kwargs):
 def script_natcostatus(sender, instance, created, **kwargs):
     natcos = Natco.objects.all()
     _natco_status = []
+    user = instance.history.first()
+    current_user = user.history_user if user.history_user else None
     if instance.automation_status != AutomationChoices.NOT_AUTOMATABLE:
         _instance = NatcoStatus.objects.filter(test_case=instance)
         if not _instance:
@@ -39,10 +41,9 @@ def script_natcostatus(sender, instance, created, **kwargs):
                             "language": language.language_name,
                             "device": manufacture.name,
                         }
-                        print(_data)
                         _natco_status.append(NatcoStatus(
                             natco=data.natco, language=language.language_name, device=manufacture.name,
-                            test_case=instance
+                            test_case=instance, user=current_user
                         ))
             with transaction.atomic():
                 NatcoStatus.objects.bulk_create(_natco_status)

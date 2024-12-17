@@ -1,7 +1,7 @@
 from rest_framework.views import exception_handler
 from rest_framework.response import Response
 from rest_framework import generics
-from analytiqa.helpers.renders import ResponseInfo
+from qa_portal.helpers.renders import ResponseInfo
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework import status
 

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c007a23b-1d02-4339-999e-d36ae9dfdb49" name="Changes" comment="New UI: New Frontend UI updated">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/apis/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/apis/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/apis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/apis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/apis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/account/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/account/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/apis/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/apis/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/apis/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/stb_tester/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/stb_tester/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/stbs/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/stbs/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/stbs/apis/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/stbs/apis/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/stbs/apis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/stbs/apis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/stbs/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/stbs/apis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/apis/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/apis/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/apis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/apis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/apis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/apis/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/testcases/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/2.c364c6ba.chunk.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/2.c364c6ba.chunk.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/381.4f3bd63f.chunk.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/381.4f3bd63f.chunk.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/431.c8a48433.chunk.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/431.c8a48433.chunk.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/612.79aff1a3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/612.79aff1a3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/686.45ad45ff.chunk.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/686.45ad45ff.chunk.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.94a46b27.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.94a46b27.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/612.414907ba.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/612.414907ba.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.a43b5967.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.a43b5967.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.a43b5967.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa_portal/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa_portal/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa_portal/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa_portal/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa_portal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa_portal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa_portal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa_portal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa_portal/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/qa_portal/wsgi.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shyaminnowave/qa_prod.git&quot;,
+    &quot;accountId&quot;: &quot;889b6f5b-89ee-4995-96c1-2af3a7e3a021&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mltcr7X9EC4ZscbJwsoBovp2sC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.pytest for tests.TestNatcoStatus.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Shyamkumar/Desktop/production/qa_portal/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shyamkumar\Desktop\production\qa_portal\frontend" />
+      <recent name="C:\Users\Shyamkumar\Desktop\production\qa_portal\frontend\build" />
+      <recent name="C:\Users\Shyamkumar\Desktop\production\qa_portal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shyamkumar\Desktop\production\qa_portal\frontend" />
+      <recent name="C:\Users\Shyamkumar\Desktop\production\qa_portal\frontend\build" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for tests.TestNatcoStatus">
+    <configuration name="qa_portal" type="Python.DjangoServer" factoryName="Django server">
+      <module name="qa_portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for tests.TestNatcoStatus" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="qa_portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.TestNatcoStatus&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for tests.TestNatcoStatus" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c007a23b-1d02-4339-999e-d36ae9dfdb49" name="Changes" comment="" />
+      <created>1727663074414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727663074414</updated>
+      <workItem from="1727663076049" duration="1124000" />
+      <workItem from="1728358451043" duration="1532000" />
+      <workItem from="1728452665506" duration="1622000" />
+      <workItem from="1728537571163" duration="13000" />
+      <workItem from="1728537745539" duration="551000" />
+      <workItem from="1728538447322" duration="222000" />
+      <workItem from="1728538678055" duration="1660000" />
+      <workItem from="1728878050623" duration="1370000" />
+      <workItem from="1730087874745" duration="2209000" />
+      <workItem from="1730090999442" duration="3380000" />
+      <workItem from="1730094712571" duration="2167000" />
+      <workItem from="1730098225393" duration="4076000" />
+      <workItem from="1730104457774" duration="7183000" />
+      <workItem from="1730175206622" duration="1923000" />
+      <workItem from="1730178825903" duration="19000" />
+      <workItem from="1730179272288" duration="166000" />
+      <workItem from="1730180309034" duration="530000" />
+      <workItem from="1730181403422" duration="1118000" />
+      <workItem from="1730183086330" duration="4603000" />
+      <workItem from="1730189659369" duration="783000" />
+      <workItem from="1730190482520" duration="17000" />
+      <workItem from="1730191892110" duration="181000" />
+      <workItem from="1730192124654" duration="81000" />
+      <workItem from="1730200809222" duration="669000" />
+      <workItem from="1730802067938" duration="2071000" />
+      <workItem from="1730808058048" duration="2899000" />
+      <workItem from="1730830027736" duration="1215000" />
+      <workItem from="1730873730807" duration="1773000" />
+      <workItem from="1730954218717" duration="2340000" />
+      <workItem from="1731516684811" duration="2752000" />
+      <workItem from="1731519623840" duration="34000" />
+      <workItem from="1731520448686" duration="852000" />
+      <workItem from="1731558154131" duration="490000" />
+      <workItem from="1731558658241" duration="4495000" />
+      <workItem from="1732011690114" duration="7056000" />
+      <workItem from="1732079280530" duration="1061000" />
+      <workItem from="1732099661640" duration="230000" />
+      <workItem from="1732100949801" duration="1583000" />
+      <workItem from="1732162131417" duration="24000" />
+      <workItem from="1732163042854" duration="26000" />
+      <workItem from="1732184364032" duration="21000" />
+      <workItem from="1732184396381" duration="656000" />
+      <workItem from="1732261241143" duration="728000" />
+      <workItem from="1732599521129" duration="1413000" />
+      <workItem from="1734412602750" duration="9743000" />
+    </task>
+    <task id="LOCAL-00001" summary="Signals Model updated">
+      <option name="closed" value="true" />
+      <created>1727663474648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727663474648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tasks: updated tasks file">
+      <option name="closed" value="true" />
+      <created>1728358903193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728358903193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tasks: updated tasks file">
+      <option name="closed" value="true" />
+      <created>1728359035582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728359035582</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Frontend: New UI">
+      <option name="closed" value="true" />
+      <created>1728452907032</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728452907032</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Frontend: New UI Updated">
+      <option name="closed" value="true" />
+      <created>1728537805937</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728537805937</updated>
+    </task>
+    <task id="LOCAL-00006" summary="serializers: History Serializer file updated">
+      <option name="closed" value="true" />
+      <created>1728538798241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728538798241</updated>
+    </task>
+    <task id="LOCAL-00007" summary="serializers: History change reason added">
+      <option name="closed" value="true" />
+      <created>1728539641117</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728539641117</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New Feature: Natco Table and Filters">
+      <option name="closed" value="true" />
+      <created>1730088278093</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730088278093</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New Feature: New Frontend Updated">
+      <option name="closed" value="true" />
+      <created>1730091266804</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730091266804</updated>
+    </task>
+    <task id="LOCAL-00010" summary="New Feature: New Frontend Updated">
+      <option name="closed" value="true" />
+      <created>1730091283836</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730091283836</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bug Fixed: Login API token bug fixed">
+      <option name="closed" value="true" />
+      <created>1730094752484</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730094752484</updated>
+    </task>
+    <task id="LOCAL-00012" summary="New UI: Base URL changed">
+      <option name="closed" value="true" />
+      <created>1730095302110</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730095302110</updated>
+    </task>
+    <task id="LOCAL-00013" summary="New UI: Base URL changed">
+      <option name="closed" value="true" />
+      <created>1730098655311</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730098655311</updated>
+    </task>
+    <task id="LOCAL-00014" summary="New UI: Base URL changed">
+      <option name="closed" value="true" />
+      <created>1730105708955</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730105708955</updated>
+    </task>
+    <task id="LOCAL-00015" summary="New UI: Base URL changed">
+      <option name="closed" value="true" />
+      <created>1730117957110</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730117957110</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New UI: Bugs Fixed">
+      <option name="closed" value="true" />
+      <created>1730175825214</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730175825214</updated>
+    </task>
+    <task id="LOCAL-00017" summary="New UI: Bugs Fixed">
+      <option name="closed" value="true" />
+      <created>1730175841090</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730175841090</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Views: Testcase Detail API bug fixed">
+      <option name="closed" value="true" />
+      <created>1730180634471</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1730180634471</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Views: Testcase Detail API bug fixed">
+      <option name="closed" value="true" />
+      <created>1730181577657</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730181577657</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Serializer: HistorySerializer Updated">
+      <option name="closed" value="true" />
+      <created>1730183383483</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730183383483</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Serializer: HistorySerializer Updated">
+      <option name="closed" value="true" />
+      <created>1730185531999</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1730185531999</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Views: Authentication Class added">
+      <option name="closed" value="true" />
+      <created>1730185848203</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730185848203</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Views: Authentication Class added">
+      <option name="closed" value="true" />
+      <created>1730187960107</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730187960107</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Serializer: History Message Changed">
+      <option name="closed" value="true" />
+      <created>1730189770898</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730189770898</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Serializer: History Message Changed">
+      <option name="closed" value="true" />
+      <created>1730190042361</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730190042361</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Serializer: History Message Changed">
+      <option name="closed" value="true" />
+      <created>1730190265270</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730190265270</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Serializer: Natco Modifed user added">
+      <option name="closed" value="true" />
+      <created>1730192067273</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730192067273</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Views: Testcase and Testcase Detail Api validation issue fixed">
+      <option name="closed" value="true" />
+      <created>1730802268056</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730802268056</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Serializer: Testcase Name validation Fixed">
+      <option name="closed" value="true" />
+      <created>1730802892821</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730802892821</updated>
+    </task>
+    <task id="LOCAL-00030" summary="New UI: Frontend UI Updated">
+      <option name="closed" value="true" />
+      <created>1730808161790</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730808161790</updated>
+    </task>
+    <task id="LOCAL-00031" summary="New UI: Frontend UI Updated">
+      <option name="closed" value="true" />
+      <created>1730830561130</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730830561130</updated>
+    </task>
+    <task id="LOCAL-00032" summary="New UI: Frontend UI Updated">
+      <option name="closed" value="true" />
+      <created>1731516933037</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731516933038</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Views: Integration View Func with path added">
+      <option name="closed" value="true" />
+      <created>1731517786765</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1731517786765</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Views: Integration View Func error Fixed">
+      <option name="closed" value="true" />
+      <created>1731518394425</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1731518394425</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Model: Integration Model field set to non unique">
+      <option name="closed" value="true" />
+      <created>1731521072038</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731521072038</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Views: Integration Project List issue fixed">
+      <option name="closed" value="true" />
+      <created>1731558935740</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731558935740</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Views: Integration Project List views updated">
+      <option name="closed" value="true" />
+      <created>1731559205196</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731559205196</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Views: Integration Project List views updated">
+      <option name="closed" value="true" />
+      <created>1731559759853</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731559759853</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Views: Integration Project List views issues Fixed">
+      <option name="closed" value="true" />
+      <created>1731561030583</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1731561030583</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Admin: ImportExport added to Testcase and Teststep">
+      <option name="closed" value="true" />
+      <created>1731561804885</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1731561804885</updated>
+    </task>
+    <task id="LOCAL-00041" summary="New Frontend UI: Core APP Backend Created">
+      <option name="closed" value="true" />
+      <created>1732012041760</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1732012041760</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Views: Issues API bugs fixed">
+      <option name="closed" value="true" />
+      <created>1732015333244</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1732015333244</updated>
+    </task>
+    <task id="LOCAL-00043" summary="New UI">
+      <option name="closed" value="true" />
+      <created>1732016440571</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1732016440571</updated>
+    </task>
+    <task id="LOCAL-00044" summary="View: Project Integration API issue Fixed">
+      <option name="closed" value="true" />
+      <created>1732029248198</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1732029248198</updated>
+    </task>
+    <task id="LOCAL-00045" summary="New UI: FrontEnd Updated">
+      <option name="closed" value="true" />
+      <created>1732101273373</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1732101273373</updated>
+    </task>
+    <task id="LOCAL-00046" summary="New UI: FrontEnd Updated V2">
+      <option name="closed" value="true" />
+      <created>1732184422811</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1732184422811</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Domain: New Domain Name Updated">
+      <option name="closed" value="true" />
+      <created>1732261276768</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1732261276768</updated>
+    </task>
+    <task id="LOCAL-00048" summary="New UI: New Frontend UI updated">
+      <option name="closed" value="true" />
+      <created>1732599651872</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1732599651872</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New UI: Base URL changed" />
+    <MESSAGE value="New UI: Bugs Fixed" />
+    <MESSAGE value="Views: Testcase Detail API bug fixed" />
+    <MESSAGE value="Serializer: HistorySerializer Updated" />
+    <MESSAGE value="Views: Authentication Class added" />
+    <MESSAGE value="Serializer: History Message Changed" />
+    <MESSAGE value="Serializer: Natco Modifed user added" />
+    <MESSAGE value="Views: Testcase and Testcase Detail Api validation issue fixed" />
+    <MESSAGE value="Serializer: Testcase Name validation Fixed" />
+    <MESSAGE value="New UI: Frontend UI Updated" />
+    <MESSAGE value="Views: Integration View Func with path added" />
+    <MESSAGE value="Views: Integration View Func error Fixed" />
+    <MESSAGE value="Model: Integration Model field set to non unique" />
+    <MESSAGE value="Views: Integration Project List issue fixed" />
+    <MESSAGE value="Views: Integration Project List views updated" />
+    <MESSAGE value="Views: Integration Project List views issues Fixed" />
+    <MESSAGE value="Admin: ImportExport added to Testcase and Teststep" />
+    <MESSAGE value="New Frontend UI: Core APP Backend Created" />
+    <MESSAGE value="Views: Issues API bugs fixed" />
+    <MESSAGE value="New UI" />
+    <MESSAGE value="View: Project Integration API issue Fixed" />
+    <MESSAGE value="New UI: FrontEnd Updated" />
+    <MESSAGE value="New UI: FrontEnd Updated V2" />
+    <MESSAGE value="Domain: New Domain Name Updated" />
+    <MESSAGE value="New UI: New Frontend UI updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="New UI: New Frontend UI updated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qa_portal/settings.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/testcases/signals.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/testcases/utlity.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/qa_portal_dt$pytest_for_tests_TestNatcoStatus.coverage" NAME="pytest for tests.TestNatcoStatus Coverage Results" MODIFIED="1734460650401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/testcases" />
+  </component>
+</project>

@@ -1,6 +1,6 @@
 from rest_framework_simplejwt.exceptions import AuthenticationFailed, InvalidToken, TokenError
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from analytiqa.helpers.renders import ResponseInfo
+from qa_portal.helpers.renders import ResponseInfo
 from rest_framework import status
 from rest_framework.views import Response
 

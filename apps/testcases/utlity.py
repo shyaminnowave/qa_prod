@@ -1,5 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from openpyxl import load_workbook
+from urllib3 import request
+
 from apps.testcases.models import (
     TestCaseModel,
     TestReport,
@@ -8,7 +10,7 @@ from apps.testcases.models import (
     TestCaseStep,
 )
 from apps.stbs.models import NactoManufacturesLanguage, STBNodeConfig, NatcoRelease
-from analytiqa.helpers.renders import ResponseInfo
+from qa_portal.helpers.renders import ResponseInfo
 from rest_framework import status
 from django.db import transaction
 from functools import lru_cache
@@ -16,9 +18,10 @@ from functools import lru_cache
 
 class ExcelFileFactory:
 
-    def __init__(self, file, **kwargs):
+    def __init__(self, file, request, **kwargs):
         self.response_format = ResponseInfo().response
         self.file = file
+        self.request = request
         super().__init__(**kwargs)
 
     def _init_workbook(self):
@@ -106,7 +109,7 @@ class TestCaseExcel(ExcelFileFactory):
         testcase_list = []
         step_list = []
         natco_list = []
-        natco = NactoManufactureLanguage.objects.all()
+        natco = NactoManufacturesLanguage.objects.all()
         try:
             for row in self._init_workbook().iter_rows(min_row=2, values_only=True):
                 if row[2] is not None:
@@ -117,6 +120,7 @@ class TestCaseExcel(ExcelFileFactory):
                         "test_description": row[7],
                         "test_name": row[6],
                         "testcase_type": TestCaseChoices.SMOKE,
+                        "created_by": self.request.user.email,
                     }
                     testcase_list.append(TestCaseModel(**_data))
                     test_case = jira_id_parts[-1]
