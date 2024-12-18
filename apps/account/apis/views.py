@@ -194,15 +194,11 @@ class LoginView(generics.GenericAPIView):
         if user is not None:
             user_token_login.send(sender=user, user=user, request=request)
             token = get_token_for_user(user)
-            api_token = ThirdPartyIntegrationTable.objects.filter(account=user).first()
             return {
                 'access': token['access'],
                 'refresh': token['refresh'],
                 'email': user.email,
                 'username': user.username,
-                'domain': api_token.domain_url if api_token and api_token.domain_url else None,
-                'jira_username': api_token.username if api_token and api_token.username else None,
-                'token': api_token.token if api_token else None
             }
         return None
 
