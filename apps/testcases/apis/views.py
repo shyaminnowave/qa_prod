@@ -156,7 +156,7 @@ class TestCaseListView(generics.ListAPIView):
     def get_queryset(self):
         queryset = None
         if self.kwargs.get('type') == 'performance':
-            queryset = TestCaseModel.objects.filter.performance_testcase()
+            queryset = TestCaseModel.objects.performance_testcase()
         elif self.kwargs.get('type') == 'smoke':
             queryset = TestCaseModel.objects.smoke_testcase()
         elif self.kwargs.get('type') == 'soak':
