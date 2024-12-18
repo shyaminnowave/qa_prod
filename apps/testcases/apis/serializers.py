@@ -127,7 +127,7 @@ class NatcoStatusSerializer(serializers.ModelSerializer):
             fields = ['user', 'modified']
             self.Meta.fields.extend(fields)
         if resolve_match.url_name == 'testcase-natco':
-            self.Meta.fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'status', 'user'
+            self.Meta.fields = ['id', 'natco', 'language', 'jira_id', 'summary', 'device', 'status', 'user',
                                 'applicable', 'history_change_reason', 'modified']
         super(NatcoStatusSerializer, self).__init__(*args, **kwargs)
 
